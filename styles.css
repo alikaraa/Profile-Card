@@ -1,0 +1,120 @@
+  
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --pure-white: #ffffff;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+}
+.bg-img {
+    position: absolute;
+}
+.bg-img-top {
+    right: 50%;
+    bottom: 35%;
+}
+.bg-img-bottom {s
+    top: 50%;
+    left: 45%;
+}
+.card {
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    box-shadow: 1px 1px 5px 1px rgba(167, 161, 161, 0.5) ;
+    -webkit-box-shadow: 0px 0px 200px 0px;
+    /* -moz-box-shadow: 300px 300px 500px 600px; */
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+    margin-top: 10%;
+}
+.card-header {
+    background-image: url(images/bg-pattern-card.svg);
+    padding: 4rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    line-height: 0;
+}
+.dp {
+    text-align: center;
+    padding-bottom: 0rem;
+}
+.dp img{
+    border: 5px solid var(--pure-white);
+    border-radius: 100%;
+    line-height: 0;
+    position: relative;
+    top: -3rem;
+}
+.hr {
+    border-top: 1px solid var(--dark-gray);
+    border-width: thin;
+    padding: 0 0 0.7rem 0;
+}
+.card-info {
+    background-color: var(--pure-white);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-details {
+    position: relative;
+    top: -2rem;
+    margin-top: -2rem;
+    padding: 0rem
+}
+.name-and-age {
+    text-align: center;
+}
+.full-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+.age {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+.country {
+    text-align: center;
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+.account-stats {
+    text-align: center;
+}
+.inline {
+    display: inline-block;
+}
+.numbers {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 1rem;
+    
+}
+.numbers p {
+    word-spacing: 2rem;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+@media only screen and (max-width: 1440px) {
+    .card {
+      width: 40%;
+    }
+  }
+@media only screen and (max-width: 375px) {
+    body {
+      background-color: lightblue;
+    }
+    .card {
+        width: 80%;
+        margin: auto;
+        margin-top: 25%;
+    }
+  }
